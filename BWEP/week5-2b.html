@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+<style type="text/css">
+		/*.red{color: red} /*dua p dlm div*/
+		/*p{color: red} /*semua p*/
+		/*div p{color: red;}*/ /*descendant selector, using space all of p under p*/
+		/*div>p{color: red;}*/ /*child selector using > only direct p*/
+		
+		/*div>h2{color: red;}
+		span>p{color: red;}*/
+		/*div>h2, span>p{color: red;}*/
+		.red{color: red;} /*<- ani change html structure */
+		
+</style>
+</head>
+<body>
+<div>
+	<h2 class="red">I am H2</h2>
+	<h3>Im a h3</h3>	
+	<h3>yet another h3</h3>
+	<!-- <p class="red">Im a P in a div</p>
+	<p class="red">Im also P in a div</p> -->
+	<p>Im a P in a div</p>
+	<p>Im also P in a div</p>
+	<span>
+		<!-- <p class="red">I am a child of span</p> -->
+		<p class="red">I am a child of span</p>
+	</span>
+</div>
+<p>im outside div</p>
+
+</body>
+</html>

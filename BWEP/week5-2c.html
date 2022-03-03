@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+	
+/*	.red{color: red}*/
+	/*div+p{color: red}*/ /*adjacent sibling using + meaning ia cari div first then the first p only*/
+	/*div~p{color: red}*/ /*general sibling using ~ meaning every p yng direct after div*/
+	div>div>p{color: red;} /*kalau panjang banar baiktah pakai id*/
+
+	</style>
+</head>
+<body>
+		<div>
+		 	<p>Im the first child of 1st div</p>
+		 	<p>Im the second child of 1st div</p>
+		 	<div><p>1.1</p>
+		 		 <u>1.2</u>
+
+		 	</div>
+		</div>
+<!-- 		<p class="red">I am the next sibling just after 1st div</p> -->
+		<p>I am the next sibling just after 1st div</p>
+		<p>I am the second sibling just after 1st div</p>
+		<div>
+		 	<p>I am the first child of the 2nd div</p>
+		</div>
+<!-- 		<p class="red">Iam the next sibling after the 2nd div</p> -->
+		<p>Iam the next sibling after the 2nd div</p>
+		<p>I am the second sibling just after 2nd div</p>
+		<p>I am the thirsd sibling just after 2nd div</p>
+
+</body>
+</html>
